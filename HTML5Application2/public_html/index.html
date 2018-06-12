@@ -12,6 +12,19 @@ and open the template in the editor.
         <script src="js/angular.min.js"></script>
     </head>
     <body>
-        
+        <script type = "text/javascript" language="javascript">
+            function apples(x,y){
+		document.write(x + " is better than "+y+"<br/>");
+            }
+	
+            function ad(x="s"){
+                    alert(x);
+            }
+            ad();
+            ad("2");
+        </script>
+        <form>
+            <input type = "button" value = "click me" onclick = "apples('sa', 'sb')">
+        </form>
     </body>
 </html>
