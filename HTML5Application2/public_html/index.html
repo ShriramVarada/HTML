@@ -104,9 +104,10 @@ and open the template in the editor.
             // Variable capacity array
             var scripture = new Array();
             scripture[1] = "Vishnu Sahasranamam"; scripture[3] = "Bhagavad Gita";
-            document.write(scripture + "<br> Length of scripture:" + scripture.length);
+            document.write(scripture + "<br> Length of scripture:" + scripture.length + "<br>");
             
-            
+            var godandscripture = scripture.concat(gods); 
+            document.write(godandscripture + "<br>");
             
         </script>
         <form>
