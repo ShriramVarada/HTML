@@ -1,21 +1,38 @@
-<!--<!DOCTYPE html>
-
+<!DOCTYPE html>
+<!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
-
+-->
 <html>
     <head>
         <title>First program</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/angular.min.js" type = "text/javascript"></script>
-    </head>
-    <body>
-        <script type = "text/javascript" language="javascript">
-              // golbal variable
-            var glob = "df";
+        <script type = "text/javascript">
+            function person(name, age){
+                this.name = name;
+                this.age = age;
+                this.deathYears = ageUntilDeath;
+            }
             
+            function ageUntilDeath(){
+                return 65 - this.age; // this. is required
+            }
+            
+            
+            var shriram = new person("Shriram", 19);
+            
+            //Object initializer
+            var yodda = {name:"Yodda", age:24};
+            
+        </script>
+    </head>
+    <body onunload="alert('djkf')">
+        <script type = "text/javascript" language="javascript">
+//              // golbal variable
+//            var glob = "df";
+//            
             function apples(x,y){
 		document.write(x + " is better than "+y+"<br/>");
                 // local variable
@@ -24,49 +41,76 @@ and open the template in the editor.
                 var sev = 6;
                 return sev++;
             }
-	
-            function ad(x="s"){
-                    alert(x);
-            }
-//            ad();
-//            ad("2");
+//	
+//            function ad(x="s"){
+//                    alert(x);
+//            }
+////            ad();
+////            ad("2");
+//            
+//            document.write("<br> " + glob + "<br>"+ apples(2,3) + "<br>");
+//            
+//            var seventy = 70; var twenty = 20;
+//            
+//            if(seventy > twenty){
+//                document.write(true);
+//                if(glob === "df" && 12 <23){
+//                    twenty = 21;
+//                    document.write("<br>" + twenty + "<br>");
+//                }
+//            }else
+//                document.write(false);
+//            
+//            switch(seventy){
+//                case 34:
+//                    document.write("This is thirtyfour");
+//                    break;
+//                case 70:
+//                    document.write("this is seventy");
+//                    break;
+//                default:
+//                    document.write("default");
+//            }
+//            
+//            for(x = 0; x < 10; x++){
+//                document.write(x + "<br>");
+//            }
+//            
+//            while(x < 20){
+//                document.write(x++ + "<br>");
+//            }
+//            // Also do-while loops
             
-            document.write("<br> " + glob + "<br>"+ apples(2,3) + "<br>");
             
-            var seventy = 70; var twenty = 20;
+            // Objects
             
-            if(seventy > twenty){
-                document.write(true);
-                if(glob === "df" && 12 <23){
-                    twenty = 21;
-                    document.write("<br>" + twenty + "<br>");
-                }
-            }else
-                document.write(false);
+            var godofGods = "Narayana";
+            document.write(godofGods.length+"<br>");
             
-            switch(seventy){
-                case 34:
-                    document.write("This is thirtyfour");
-                    break;
-                case 70:
-                    document.write("this is seventy");
-                    break;
-                default:
-                    document.write("default");
-            }
+            //Objects instantiated in the head element
+            document.write(shriram.name+"<br>");
+            document.write(yodda.age+"<br>");
+            document.write(shriram.deathYears() + "<br>");
             
-            for(x = 0; x < 10; x++){
-                document.write(x + "<br>");
-            }
+//            var people = new Array(shriram, yodda, godofGods);
+//            
+//            document.write(people[1].name+ "<br>");
+//            
+            var gods = new Array(3);
             
-            while(x < 20){
-                document.write(x++ + "<br>");
-            }
-            // Also do-while loops
+            gods[0] = "Vayu";
+            gods[1] = "Indra"; gods[2] = "Yama";
+
+            // Variable capacity array
+            var scripture = new Array();
+            scripture[1] = "Vishnu Sahasranamam"; scripture[3] = "Bhagavad Gita";
+            document.write(scripture + "<br> Length of scripture:" + scripture.length);
+            
+            
             
         </script>
         <form>
             <input type = "button" value = "click me" onclick = "apples('sa', 'sb')">
         </form>
     </body>
-</html>-->
+</html>
