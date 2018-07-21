@@ -1,25 +1,46 @@
+@font-face {
+  font-family: 'Koshan';
+  src: url('KaushanScript-Regular.otf') format('opentype');
+}
+
 body {
   font-family: arial;
   color: rgb(174, 243, 23);
   padding: 10px;
+  text-decoration: overline;
+  line-height: 1.9em;
 }
 
 h2 {
   color: hsl(160, 50%, 40%);;
   background-color: blue;
   padding: inherit;
+  text-transform: capitalize;
 }
 
 h1+p{
   color: rgb(25, 132, 145);
+  font-family: "Courier New", Georgia, times, serif;
+  font-style: italic;
+  word-spacing: 1.5em;
+  letter-spacing: 1.2em;
 }
 
 i{
+  font-family: Koshan;
   color: rgb(23, 46, 12) !important;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 i{
   color: pink;
+  font-size: 3em;
+}
+
+h1{
+  text-align: right;
+  vertical-align:middle;
 }
 
 /* If the two selectors are identical,
