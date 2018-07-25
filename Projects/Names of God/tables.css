@@ -29,9 +29,9 @@ tr:hover{
   background-color: #c3e6e5;
 }
 
-input {
+input[type="text"]{
   font-size: 120%;
-  color: #5a5854;
+  color: #5854;
   background-color: #f2f2f2;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
@@ -44,4 +44,59 @@ input {
 input:focus {
   background-color: #ffffff;
   border: 1px solid #b1e1e4;text layout
+}
+#username {
+  background-image: url(twitter.png) no-repeat right center;
+}
+
+#submit{
+  color: #444444;
+  text-shadow: 0px 1px 1px #ffffff;
+  border-bottom: 2px solid #b2b2b2;
+  background-color: #b9e4e3;
+}
+
+#submit:hover {
+  color: #333333;
+  border: 1px solid #a4a4a4;
+  border-top: 2px solid #b2b2b2;
+  background-color: #a0dbc4;
+  background: -webkit-gradient(linear, left top,
+  left bottom, from(#a8cfce), to(#beeae9));
+  background:
+  -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background:
+  -o-linear-gradient(top, #a8cfce, #beeae9);
+  background:
+  -ms-linear-gradient(top, #a8cfce, #beeae9);
+}
+
+fieldset {
+  width: 550px;
+  border: 10px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+legend {
+  background-color: purple;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+div {
+  border-bottom: 10px solid #efefef;
+  margin: 10px;
+  padding-bottom: 10px;
+  cursor: crosshair;
+  width: 260px;
+}
+.title {
+  float: left;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
 }
