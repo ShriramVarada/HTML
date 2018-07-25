@@ -3,6 +3,28 @@
 <title> Chps 3- </title>
 
   <style type="text/css">
+
+    body{
+      /* fallback color */
+      background-color: #66cccc;
+      /* fallback image */
+      background-image: url(images/fallback-image.png);
+      /* Firefox 3.6+ */
+      background-image: -moz-linear-gradient(#336666,
+      #66cccc);
+      /* Safari 4+, Chrome 1+ */
+      background-image: -webkit-gradient(linear, 0% 0%,
+      0% 100%, from(#66cccc), to(#336666));
+      /* Safari 5.1+, Chrome 10+ */
+      background-image: -webkit-linear-gradient(#336666,
+      #66cccc);
+      /* Opera 11.10+ */
+      background-image: -o-linear-gradient(#336666,
+      #66cccc);
+      height: 150px;
+      width: 300px;
+    }
+
     a:link {
       color: red;
       opacity: .3;
@@ -37,13 +59,37 @@
 
     #test{
       vertical-align: text-top;
+      display: block;
     }
 
     #AboutNarayana{
       background-image: url("Images/rama-postcards-OY01_l.png");
       background-repeat: no-repeat;
+      background-position: 50% 80%; /* only when no repeat */
+      background-attachment: fixed;
+      border-width: thick;
       text-shadow: 1px 1px 2px #EF8762;
     }
+
+    /* For background property
+    1: background-color
+    2: background-image
+    3: background-repeat
+    4: background-attachment
+    5: background-position
+
+    div {
+  background:
+  url(example-1.jpg)
+  top left no-repeat,
+  url(example-2.jpg)
+  bottom left no-repeat,
+  url(example-3.jpg)
+  centre top repeat-x;}
+
+  Multiple background images
+
+    */
 
     #OrderedlistofNamas{
       /* border: width style color */
@@ -78,6 +124,52 @@
     li.Salt{
       visibility: hidden;
     }
+
+    img.medium{
+      height: 300px;
+      width: 300px;
+    }
+
+    img.align-left {
+      float: left;
+      margin-right: 10px;
+    }
+
+    img.align-right {
+      float: right;
+      margin-left: 10px;
+    }
+
+    img.align-center {
+      display: block;
+      margin: 0px auto;
+    }
+
+    a.button {
+      height: 36px;
+      background-image: url("../sprite.png");
+      display: inline-block;
+    }
+    a#add-to-basket {
+      width: 174px;
+      background-position: 0px 0px;
+    }
+    a#framing-options {
+      width: 210px;
+      background-position: -175px 0px;
+    }
+    a#add-to-basket:hover {
+      background-position: 0px -40px;
+    }
+    a#framing-options:hover {
+      background-position: -175px -40px;
+    }
+    a#add-to-basket:active {
+      background-position: 0px -80px;
+    }
+    a#framing-options:active {
+      background-position: -175px -80px;
+    }
   </style>
 
 </head>
@@ -88,10 +180,10 @@
 <a href="#OrderedlistofNamas"> List of Namas </a> <br /><br />
 
 <img src="Images/2016-02-01-1454365830-3844375-vishnu-thumb.jpg" alt="Narayana" title="Sustainer of all beings"
-                  width="300" height="300">
+                  width="300" height="300" class="align-center">
 
 <figure>
-  <img src="Images\Narayana May 17 2012.jpg" alt="Narayana" title="Sustainer of all beings">
+  <img src="Images\Narayana May 17 2012.jpg" alt="Narayana" title="Sustainer of all beings" id="narayana" class="align-right medium">
   <br />
   <figcaption> <h4> Narayana- the Supreme Personality of Godhead </h4></figcaption>
 </figure>
@@ -142,6 +234,13 @@
 <!-- i is inline while h3 is not -->
 
 <p>Narayana engages in the <img src="Images\mahavishnu2.jpg" title="All-pervading" width="200" height="400" id="test"> creation of 14 worlds within the universe as Brahma when he deliberately accepts rajas guna according to Brahmanism. Narayana himself sustains, maintains and preserves the universe as Vishnu. In Shaivism, Narayan also accepts sattva guna and annihilates the universe at the end of maha-kalpa as Shiva or Rudra when he accepts tamas guna.[2][3][4] According to the Bhagavata Purana, Lord Narayana is the supreme controller and is supreme among deities, the ultimate soul. He is also called as Surya Narayana, one who shines like the brilliant sun. He is said to pervade whatever is seen or heard in this universe from inside and outside alike.[7] He is also mainly associated with the cosmic waters of creation. </p>
+
+<br /> <br />
+
+<a class="button" id="add-to-basket">
+Add to basket</a>
+<a class="button" id="framing-options">
+Framing options</a>
 
 </body>
 </html>
