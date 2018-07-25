@@ -11,14 +11,14 @@ h1 {
 }
 
 p {
-  width: 250px;
-  float: right;
+  width: 550px;
+  /* float: right; */
   position:relative;
 }
 
 .example {
   /*position: relative;*/
-   z-index: 50;
+  z-index: 50;
   top: 10px;
   left: 100px;
 }
@@ -26,7 +26,7 @@ p {
   clear: both;
 }
 blockquote {
-  float:left;
+  /* float:left; */
   width: 275px;
   font-size: 130%;
   font-style: italic;
@@ -43,13 +43,8 @@ border: 1px solid #665544;
 overflow: auto;
 width: 100%;
 }
-.column1of2 {
+.column1of2, .column2of2 {
   float: left;
-  width: 620px;
-  margin: 10px;
-}
-.column2of2 {
-  float: left;
-  width: 300px;
+  width: 320px;
   margin: 10px;
 }
