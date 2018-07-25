@@ -3,47 +3,68 @@
 <title> Chps 3- </title>
 
   <style type="text/css">
-  a:link {
-    color: red;
-    opacity: .3;
-  }
+    a:link {
+      color: red;
+      opacity: .3;
+    }
 
-  a:visited{
-    color: yellow;
-  }
+    a:visited{
+      color: yellow;
+    }
 
-  a:hover{
-    color: green;
-    text-decoration: underline;
-  }
+    a:hover{
+      color: green;
+      text-decoration: underline;
+    }
 
-  a:active{
-    color: pink;
-  }
+    a:active{
+      color: pink;
+    }
 
-  #Meanings{
-    color: rgba(2,45,188,.6);
-  }
+    #Meanings{
+      color: rgba(2,45,188,.6);
+    }
 
-  #Meanings::first-line{
-    font-size: 300%;
-    font-weight: bold;
-  }
+    #Meanings::first-line{
+      font-size: 300%;
+      font-weight: bold;
+    }
 
-  #Meanings::first-letter{
-    font-size: 700%;
-    font-weight: bold;
-  }
+    #Meanings::first-letter{
+      font-size: 700%;
+      font-weight: bold;
+    }
 
-  #test{
-    vertical-align: text-top;
-  }
+    #test{
+      vertical-align: text-top;
+    }
 
-  #AboutNarayana{
-    background-image: url("Images\rama-postcards-OY01_l.png");
-    background-repeat: no-repeat;
-    text-shadow: 1px 1px 2px #EF8762;
-  }
+    #AboutNarayana{
+      background-image: url("Images/rama-postcards-OY01_l.png");
+      background-repeat: no-repeat;
+      text-shadow: 1px 1px 2px #EF8762;
+    }
+
+    #OrderedlistofNamas{
+      /* border: width style color */
+      border-color: hsl(23, 40%, 45%) #111111 #ee3e80 #0088dd;
+      border-style: dashed inset solid dotted;
+      border-width: 2px 2px 2px 3px;
+      padding: 10px 20px 30px 40px;
+      margin: 23px auto 23px auto;
+      width: 40px;
+      text-align:center;
+    }
+
+    #SomeList{
+      border-width: 100px;
+      border-style: solid;
+      border-image: url("Images/rama-postcards-OY01_l.png") 14 234 12 17 repeat;
+    }
+
+    li.Salt{
+      visibility: hidden;
+    }
   </style>
 
 </head>
@@ -51,9 +72,9 @@
 <body>
 
 <a href="#Meanings"> Meanings of names of God </a> <br />
-<a href="#Ordered list of Namas"> List of Namas </a> <br /><br />
+<a href="#listofNamas"> List of Namas </a> <br /><br />
 
-<img src="Images\2016-02-01-1454365830-3844375-vishnu-thumb.jpg" alt="Narayana" title="Sustainer of all beings"
+<img src="Images/2016-02-01-1454365830-3844375-vishnu-thumb.jpg" alt="Narayana" title="Sustainer of all beings"
                   width="300" height="300">
 
 <figure>
@@ -62,7 +83,7 @@
   <figcaption> <h4> Narayana- the Supreme Personality of Godhead </h4></figcaption>
 </figure>
 
-<ol id="Ordered list of Namas">
+<ol id="OrderedlistofNamas">
   <li> Narayana </li>
   <li> Krishna </li>
   <li> Rama </li>
@@ -71,7 +92,7 @@
 <ul id="SomeList">
   <li>1kg King Edward potatoes</li>
   <li>100ml milk</li>
-  <li>50g salted butter</li>
+  <li class="salt">50g salted butter</li>
   <li>Freshly grated nutmeg</li>
   <li>Salt and pepper to taste</li>
 </ul>
